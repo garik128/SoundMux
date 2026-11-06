@@ -64,6 +64,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package-portable.ps1
 
 Последняя команда собирает папку `dist-portable/SoundMux` и архив `dist-portable/SoundMux-portable.zip`.
 
+## О проекте
+
+Программа создана для [perevodman.com](https://perevodman.com/). Обсуждение и вопросы: [новость о SoundMux на сайте](https://perevodman.com/news/147166/).
+
 ## Лицензия
 
 Код SoundMux распространяется по лицензии [MIT](LICENSE). Вместе с портативной сборкой поставляются сторонние программы (FFmpeg, MKVToolNix, Python и др.) под своими лицензиями; их тексты и ссылки на исходный код лежат в папке `licenses` внутри архива.
