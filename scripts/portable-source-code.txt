@@ -1,0 +1,28 @@
+ИСХОДНЫЙ КОД КОМПОНЕНТОВ ПОД GNU GPL / SOURCE CODE OF GPL COMPONENTS
+
+В комплект SoundMux входят две сторонние программы под лицензией GNU GPL. Они запускаются
+SoundMux как отдельные процессы и не изменены. Тексты лицензий лежат рядом, в этой папке.
+Вы вправе получить их исходный код, как описано ниже.
+
+1. FFmpeg и FFprobe (bin\ffmpeg.exe, bin\ffprobe.exe), лицензия GNU GPL v3
+   Сборка: {FFMPEG_VERSION}
+   (статическая сборка gyan.dev, https://www.gyan.dev/ffmpeg/builds/)
+   Исходный код FFmpeg этой сборки (коммит {FFMPEG_COMMIT}):
+     https://github.com/FFmpeg/FFmpeg/commit/{FFMPEG_COMMIT}
+     https://github.com/FFmpeg/FFmpeg/archive/{FFMPEG_COMMIT}.tar.gz
+   Сборка статическая и включает внешние библиотеки (x264, x265, Rubber Band, zimg, libass
+   и другие). Их список и параметры сборки: FFmpeg-build-info.txt в этой папке (раздел
+   External libraries) и вывод команды: bin\ffmpeg.exe -version
+   Исходный код этих библиотек публикуют их авторы. Перечень библиотек сборки есть на
+   странице gyan.dev (раздел libraries); по запросу (см. пункт 3) мы укажем точные версии.
+
+2. MKVToolNix: mkvmerge (bin\mkvmerge.exe), версия {MKV_VERSION}, лицензия GNU GPL v2
+   Исходный код: https://mkvtoolnix.download/sources/mkvtoolnix-{MKV_VERSION}.tar.xz
+   Сайт проекта: https://mkvtoolnix.download/
+{MKV_LEGACY_LINES}
+3. Копии исходного кода
+{SOURCES_URL_LINE}{CONTACT_LINE}   Исходный код предоставляется бесплатно, за исключением стоимости носителя и пересылки.
+   Предложение действует не менее трёх лет с момента получения вами этого комплекта.
+
+Остальные компоненты (встроенный Python, NumPy, библиотеки интерфейса и приложения)
+распространяются на условиях своих разрешительных лицензий, см. THIRD-PARTY-NOTICES.txt.

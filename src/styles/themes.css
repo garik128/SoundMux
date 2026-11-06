@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light;
+  --page: #f6f3ed;
+  --surface: #fffdfa;
+  --surface-soft: #faf7f1;
+  --surface-raised: #fffaf2;
+  --text: #302a22;
+  --muted: #756b5d;
+  --line: #e1d9cd;
+  --control-border: #d2c6b4;
+  --accent: #a95400;
+  --accent-hover: #874100;
+  --accent-fill: #e89c23;
+  --on-accent: #24190c;
+  --focus: #c47400;
+  --tint: #fbefd9;
+  --tint-border: #d7af64;
+  --badge: #f1e7d6;
+  --preview: #f0eae0;
+  --result: #fcf1df;
+  --warning: #fff0d7;
+  --warning-border: #ba7a16;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --page: #14171d;
+  --surface: #1c2027;
+  --surface-soft: #20242c;
+  --surface-raised: #242830;
+  --text: #eee8de;
+  --muted: #b5aea2;
+  --line: #393c42;
+  --control-border: #565047;
+  --accent: #f1b34b;
+  --accent-hover: #ffc76a;
+  --accent-fill: #eaa32d;
+  --on-accent: #24190c;
+  --focus: #f5b747;
+  --tint: #332b1e;
+  --tint-border: #88672e;
+  --badge: #332e25;
+  --preview: #252930;
+  --result: #30291e;
+  --warning: #382c19;
+  --warning-border: #cf9334;
+}
+
+/* CSS also follows the OS before JavaScript starts. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --page: #14171d;
+    --surface: #1c2027;
+    --surface-soft: #20242c;
+    --surface-raised: #242830;
+    --text: #eee8de;
+    --muted: #b5aea2;
+    --line: #393c42;
+    --control-border: #565047;
+    --accent: #f1b34b;
+    --accent-hover: #ffc76a;
+    --accent-fill: #eaa32d;
+    --on-accent: #24190c;
+    --focus: #f5b747;
+    --tint: #332b1e;
+    --tint-border: #88672e;
+    --badge: #332e25;
+    --preview: #252930;
+    --result: #30291e;
+    --warning: #382c19;
+    --warning-border: #cf9334;
+  }
+}

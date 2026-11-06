@@ -1,0 +1,29 @@
+{
+  "name": "soundmux",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5174 --strictPort",
+    "build": "tsc -b && vite build",
+    "test": "tsx --test tests/*.test.ts",
+    "test:media": ".runtime\\python\\python.exe -m unittest backend.tests.test_pipeline -v",
+    "desktop": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/desktop.ps1",
+    "check:native": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/desktop.ps1 -Check",
+    "test:native": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-native.ps1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.4",
+    "@tauri-apps/plugin-dialog": "^2.8.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.0"
+  }
+}

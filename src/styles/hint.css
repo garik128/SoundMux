@@ -1,0 +1,13 @@
+/* "?" button next to a setting and the card with its details. */
+.info-button { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; min-height: 20px; padding: 0; margin-left: 7px; vertical-align: middle; border-radius: 50%; border: 1px solid var(--control-border); background: none; color: var(--accent); font-size: 12px; font-weight: 700; line-height: 1; }
+.info-button[aria-expanded=true] { background: var(--tint); border-color: var(--tint-border); }
+.info-card { position: fixed; z-index: 30; overflow: auto; padding: 14px 16px; border: 1px solid var(--tint-border); border-radius: 4px; background: var(--surface); color: var(--text); box-shadow: 0 8px 28px #0006; font-size: 13px; line-height: 1.5; }
+.info-card strong { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 600; }
+.info-card p + p { margin-top: 8px; }
+.info-card dl { margin: 8px 0 0; }
+.info-card dt { font-weight: 600; margin-top: 8px; }
+.info-card dd { margin: 2px 0 0; color: var(--muted); }
+.checkbox .info-button { margin-left: 4px; }
+/* Vertical rhythm of the settings list: a short hint hugs its field, the next field starts clearly below. */
+.advanced fieldset > label:not(.checkbox) { margin-top: 16px; }
+.advanced fieldset > p.small { margin-top: 6px; }

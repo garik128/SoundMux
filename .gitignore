@@ -1,0 +1,31 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.log
+.npm-cache/
+*.tsbuildinfo
+.tools/
+.runtime/
+.local/
+src-tauri/target/
+backend/__pycache__/
+backend/tests/__pycache__/
+backend/vendor/__pycache__/
+src-tauri/gen/
+
+# not published
+dist-portable/
+.impeccable/
+.claude/
+CLAUDE.md
+SESSION_HANDOFF.md
+REVIEW.md
+REVIEW_RESPONSE.md
+IMPLEMENTATION_PLAN.md
+REAL_MEDIA_TEST_REPORT.md
+LINUX_PORT.md
+Обработка и пересжатие*
+
+__pycache__/
+*.pyc
